@@ -2,3 +2,14 @@ Thu 16 Mar 2023 03:25:19 PM UTC:
  tests:  0|7
 total_score: 0/70
 3ba8bbf
+Thu 16 Mar 2023 03:31:49 PM UTC: 
+ exercises.c | 3 +++
+ 1 file changed, 3 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘swap’:
+exercises.c:16:3: error: ‘temp’ undeclared (first use in this function)
+   16 |   temp=*a;
+      |   ^~~~
+exercises.c:16:3: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+6bad782
