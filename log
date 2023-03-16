@@ -311,3 +311,32 @@ exercises.c:120:18: error: invalid operands to binary + (have ‘Vector’ and �
 cc1: all warnings being treated as errors
 Compilation failed
 d1f1d1e
+Thu 16 Mar 2023 04:31:11 PM UTC: 
+ exercises.c | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:87:3: error: unknown type name ‘vector’; did you mean ‘Vector’?
+   87 |   vector *v = (vector *) malloc (sizeof(vector) * n);
+      |   ^~~~~~
+      |   Vector
+exercises.c:87:16: error: ‘vector’ undeclared (first use in this function); did you mean ‘Vector’?
+   87 |   vector *v = (vector *) malloc (sizeof(vector) * n);
+      |                ^~~~~~
+      |                Vector
+exercises.c:87:16: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:87:24: error: expected expression before ‘)’ token
+   87 |   vector *v = (vector *) malloc (sizeof(vector) * n);
+      |                        ^
+exercises.c:89:4: error: request for member ‘datos’ in something not a structure or union
+   89 |   v->datos = (int *) calloc (n,sizeof(int));
+      |    ^~
+exercises.c:90:4: error: request for member ‘capacidad’ in something not a structure or union
+   90 |   v->capacidad = n;
+      |    ^~
+exercises.c:91:11: error: returning ‘int *’ from a function with incompatible return type ‘Vector *’ [-Werror=incompatible-pointer-types]
+   91 |    return (v);
+      |           ^
+cc1: all warnings being treated as errors
+Compilation failed
+3b81f05
