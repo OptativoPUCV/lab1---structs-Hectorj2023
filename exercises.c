@@ -86,7 +86,7 @@ Vector * crearVector(int n)
 {
   vector *v = (vector *) malloc (sizeof(vector) * n);
 
-  v->datps = (vector *) calloc (n,sizeof(int));
+  v->datos = (vector *) calloc (n,sizeof(int));
    return NULL;
 }
 
