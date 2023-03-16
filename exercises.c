@@ -82,7 +82,11 @@ typedef struct {
    int capacidad; // capacidad del arreglo
 } Vector;
 
-Vector * crearVector(int n) {
+Vector * crearVector(int n)
+{
+  vector *v = (vector *) malloc (sizeof(vector) * n);
+
+  v->datps = (vector *) calloc (n,sizeof(int));
    return NULL;
 }
 
@@ -112,7 +116,7 @@ actualiza el vector `c` con el resultado de la suma.
 void sumaV(Vector * a, Vector * b, Vector * c) {
   int i;
    for (i=0; i<3 ; i++){
-     c[i] = *a + *b;
+     c[i] = a[i] + b[i];
    }
 }
 

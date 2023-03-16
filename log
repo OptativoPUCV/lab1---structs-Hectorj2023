@@ -214,3 +214,34 @@ exercises.c:115:16: error: invalid operands to binary + (have ‘Vector’ and �
       |             Vector
 Compilation failed
 9f7dc7d
+Thu 16 Mar 2023 04:29:18 PM UTC: 
+ exercises.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:87:3: error: unknown type name ‘vector’; did you mean ‘Vector’?
+   87 |   vector *v = (vector *) malloc (sizeof(vector) * n);
+      |   ^~~~~~
+      |   Vector
+exercises.c:87:16: error: ‘vector’ undeclared (first use in this function); did you mean ‘Vector’?
+   87 |   vector *v = (vector *) malloc (sizeof(vector) * n);
+      |                ^~~~~~
+      |                Vector
+exercises.c:87:16: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:87:24: error: expected expression before ‘)’ token
+   87 |   vector *v = (vector *) malloc (sizeof(vector) * n);
+      |                        ^
+exercises.c:89:4: error: request for member ‘datps’ in something not a structure or union
+   89 |   v->datps = (vector *) calloc (n,sizeof(int));
+      |    ^~
+exercises.c:89:23: error: expected expression before ‘)’ token
+   89 |   v->datps = (vector *) calloc (n,sizeof(int));
+      |                       ^
+exercises.c: In function ‘sumaV’:
+exercises.c:119:18: error: invalid operands to binary + (have ‘Vector’ and ‘Vector’)
+  119 |      c[i] = a[i] + b[i];
+      |             ~~~~ ^ ~~~~
+      |              |      |
+      |              Vector Vector
+Compilation failed
+341123e
