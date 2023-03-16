@@ -378,3 +378,19 @@ exercises.c:102:10: error: incompatible types when assigning to type ‘Vector�
       |          ^~~~~
 Compilation failed
 3b970ae
+Thu 16 Mar 2023 11:58:36 PM UTC: 
+ exercises.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:101:10: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+  101 |   v[i] = valor;
+      |          ^~~~~
+exercises.c: In function ‘sumaV’:
+exercises.c:123:17: error: invalid operands to binary + (have ‘Vector’ and ‘Vector’)
+  123 |     c[i] = a[i] + b[i];
+      |            ~~~~ ^ ~~~~
+      |             |      |
+      |             Vector Vector
+Compilation failed
+0688e2d
