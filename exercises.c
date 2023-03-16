@@ -27,15 +27,15 @@ almacena en las variables apuntadas por max y min.
 */
 void arrayMaxMin(int *a, int n, int *max, int *min) {
   int i;
-  for (i=1;i<*a;i++ )
+  for (i=1;i<n;i++ )
     {
-      if (n[i]> *max)
+      if (a[i]> *max)
       {
-        *max=n[i];
+        *max=a[i];
       }
-          if (n[i]< *min)
+            if (a[i]< *min)
       {
-        *min=n[i];
+        *min=a[i];
       }
     }
     
