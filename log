@@ -170,3 +170,22 @@ Thu 16 Mar 2023 04:23:54 PM UTC:
  tests:  3|4
 total_score: 30/70
 4adb000
+Thu 16 Mar 2023 04:25:27 PM UTC: 
+ exercises.c | 9 +++++----
+ 1 file changed, 5 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:115:18: error: invalid operands to binary + (have ‘Vector’ and ‘Vector’)
+  115 |      c[i] = a[i] + b[i];
+      |             ~~~~ ^ ~~~~
+      |              |      |
+      |              Vector Vector
+exercises.c:117:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+  117 |   return *c;
+      |          ^~
+exercises.c:112:6: note: declared here
+  112 | void sumaV(Vector * a, Vector * b, Vector * c) {
+      |      ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a0fb5b5
