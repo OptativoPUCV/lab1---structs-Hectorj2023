@@ -340,3 +340,9 @@ exercises.c:91:11: error: returning ‘int *’ from a function with incompatibl
 cc1: all warnings being treated as errors
 Compilation failed
 3b81f05
+Thu 16 Mar 2023 04:32:58 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|3
+total_score: 40/70
+7a470e5
