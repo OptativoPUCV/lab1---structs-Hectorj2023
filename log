@@ -368,3 +368,13 @@ exercises.c:101:10: error: ‘Valor’ undeclared (first use in this function); 
 exercises.c:101:10: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 0a1a8e5
+Thu 16 Mar 2023 11:54:39 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:102:10: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+  102 |   v[i] = valor;
+      |          ^~~~~
+Compilation failed
+3b970ae
