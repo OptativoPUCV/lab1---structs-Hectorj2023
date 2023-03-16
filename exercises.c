@@ -114,7 +114,6 @@ void sumaV(Vector * a, Vector * b, Vector * c) {
    for (i=0; i<3 ; i++){
      c[i] = a[i] + b[i];
    }
-  return *c;
 }
 
 /*

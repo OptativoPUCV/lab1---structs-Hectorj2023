@@ -189,3 +189,15 @@ exercises.c:112:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 a0fb5b5
+Thu 16 Mar 2023 04:25:37 PM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:115:18: error: invalid operands to binary + (have ‘Vector’ and ‘Vector’)
+  115 |      c[i] = a[i] + b[i];
+      |             ~~~~ ^ ~~~~
+      |              |      |
+      |              Vector Vector
+Compilation failed
+683b487
