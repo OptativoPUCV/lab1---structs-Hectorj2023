@@ -31,3 +31,22 @@ Thu 16 Mar 2023 03:51:41 PM UTC:
  tests:  1|6
 total_score: 10/70
 6ee5685
+Thu 16 Mar 2023 03:53:47 PM UTC: 
+ exercises.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:32:12: error: subscripted value is neither array nor pointer nor vector
+   32 |       if (n[i]> *max)
+      |            ^
+exercises.c:34:15: error: subscripted value is neither array nor pointer nor vector
+   34 |         *max=n[i];
+      |               ^
+exercises.c:36:16: error: subscripted value is neither array nor pointer nor vector
+   36 |           if (n[i]< *min)
+      |                ^
+exercises.c:38:15: error: subscripted value is neither array nor pointer nor vector
+   38 |         *min=n[i];
+      |               ^
+Compilation failed
+3a858d3
