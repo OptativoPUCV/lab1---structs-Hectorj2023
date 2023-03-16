@@ -346,3 +346,13 @@ Thu 16 Mar 2023 04:32:58 PM UTC:
  tests:  4|3
 total_score: 40/70
 7a470e5
+Thu 16 Mar 2023 11:51:54 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘asignarValor’:
+exercises.c:101:10: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+  101 |   v[i] = valor;
+      |          ^~~~~
+Compilation failed
+d657eab
