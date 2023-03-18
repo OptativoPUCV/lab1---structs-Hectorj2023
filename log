@@ -622,3 +622,13 @@ exercises.c:133:34: error: expected identifier before ‘*’ token
       |                                  ^
 Compilation failed
 d63a1b6
+Sat 18 Mar 2023 05:11:03 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:133:32: error: invalid operands to binary * (have ‘Vector *’ and ‘long unsigned int’)
+  133 |     c->datos = (int*) malloc(c * sizeof(int));
+      |                                ^
+Compilation failed
+3f7db88
