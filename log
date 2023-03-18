@@ -518,3 +518,14 @@ exercises.c:120:7: error: unused variable ‘tam’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 af08652
+Sat 18 Mar 2023 05:02:36 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:120:7: error: unused variable ‘tam’ [-Werror=unused-variable]
+  120 |   int tam;
+      |       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+d8cb9c6
