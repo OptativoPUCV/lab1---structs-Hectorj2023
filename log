@@ -666,3 +666,17 @@ exercises.c:133:7: error: unused variable ‘tam’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 0e272ab
+Sat 18 Mar 2023 05:13:37 AM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:134:31: error: ‘Vector’ has no member named ‘tam’
+  134 |     c->datos = (int*) malloc(c->tam * sizeof(int));
+      |                               ^~
+exercises.c:133:9: error: unused variable ‘tam’ [-Werror=unused-variable]
+  133 |     int tam;
+      |         ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+e702e99
