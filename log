@@ -453,3 +453,9 @@ exercises.c:123:26: error: ‘i’ is used uninitialized in this function [-Werr
 cc1: all warnings being treated as errors
 Compilation failed
 6b3d271
+Sat 18 Mar 2023 04:35:58 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  6|2
+total_score: 50/70
+d5d4392
