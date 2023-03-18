@@ -130,29 +130,5 @@ Use las operaciones implementadas de vectores para
 sumar (a1,a2)+(b1+b2). Almacene el resultado en el vector c.
 */
 void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
-void asignarValor(Vector *v, int i, int valor) {
-    if (i < 0 || i >= v->tam) {
-        printf("Error: índice fuera de rango\n");
-        exit(1);
-    }
-    v->datos[i] = valor;
-}
 
-int obtenerValor(Vector *v, int i) {
-    if (i < 0 || i >= v->tam) {
-        printf("Error: índice fuera de rango\n");
-        exit(1);
-    }
-    return v->datos[i];
-}
-
-void sumarVectores(Vector *a, Vector *b, Vector *c) {
-    if (a->tam != b->tam || b->tam != c->tam) {
-        printf("Error: los vectores no tienen el mismo tamaño\n");
-        exit(1);
-    }
-    for (int i = 0; i < a->tam; i++) {
-        c->datos[i] = a->datos[i] + b->datos[i];
-    }
-}
 }
