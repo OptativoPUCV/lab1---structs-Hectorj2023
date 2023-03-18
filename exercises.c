@@ -121,6 +121,7 @@ void sumaV(Vector * a, Vector * b, Vector * c) {
   int tam;
   for (int i = 0; i < a->tam; i++) {
    c->datos[i] = a->datos[i] + b->datos[i];
+}
 
 }
 

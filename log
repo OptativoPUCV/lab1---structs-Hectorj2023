@@ -487,3 +487,20 @@ test.c:251:5: error: ‘main’ defined but not used [-Werror=unused-function]
 cc1: all warnings being treated as errors
 Compilation failed
 8c5e07c
+Sat 18 Mar 2023 05:00:23 AM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:122:24: error: ‘Vector’ has no member named ‘tam’
+  122 |   for (int i = 0; i < a->tam; i++) {
+      |                        ^~
+exercises.c:121:7: error: unused variable ‘tam’ [-Werror=unused-variable]
+  121 |   int tam;
+      |       ^~~
+exercises.c:120:7: error: unused variable ‘i’ [-Werror=unused-variable]
+  120 |   int i=0;
+      |       ^
+cc1: all warnings being treated as errors
+Compilation failed
+9dee363
