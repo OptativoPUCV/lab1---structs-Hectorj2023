@@ -422,3 +422,14 @@ Sat 18 Mar 2023 04:33:28 AM UTC:
  tests:  6|2
 total_score: 50/70
 7701e57
+Sat 18 Mar 2023 04:35:02 AM UTC: 
+ exercises.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+In file included from test.c:5:
+test.c: In function ‘sumaV’:
+exercises.c:122:3: error: ‘longitud’ is used uninitialized in this function [-Werror=uninitialized]
+  122 |   for (i=0; i<longitud ; i++){
+      |   ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+62f8331
