@@ -121,7 +121,7 @@ void sumaV(Vector * a, Vector * b, Vector * c) {
   //int longitud;
   //for (i=0; i<longitud ; i++){
    c->datos[i] = a->datos[i] + b->datos[i];
-  }
+  
 }
 
 /*

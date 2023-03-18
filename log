@@ -442,3 +442,14 @@ exercises.c:125:1: error: expected identifier or ‘(’ before ‘}’ token
       | ^
 Compilation failed
 d35ba96
+Sat 18 Mar 2023 04:35:44 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+test.c: In function ‘sumaV’:
+exercises.c:123:26: error: ‘i’ is used uninitialized in this function [-Werror=uninitialized]
+  123 |    c->datos[i] = a->datos[i] + b->datos[i];
+      |                          ^
+cc1: all warnings being treated as errors
+Compilation failed
+6b3d271
