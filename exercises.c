@@ -118,10 +118,10 @@ actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) {
   int i=0;
-  //int longitud;
-  //for (i=0; i<longitud ; i++){
+  int tam;
+  for (int i = 0; i < a->tam; i++) {
    c->datos[i] = a->datos[i] + b->datos[i];
-  
+
 }
 
 /*

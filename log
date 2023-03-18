@@ -459,3 +459,31 @@ Sat 18 Mar 2023 04:35:58 AM UTC:
  tests:  6|2
 total_score: 50/70
 d5d4392
+Sat 18 Mar 2023 05:00:16 AM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:122:24: error: ‘Vector’ has no member named ‘tam’
+  122 |   for (int i = 0; i < a->tam; i++) {
+      |                        ^~
+test.c:251:5: error: ‘main’ is normally a non-static function [-Werror=main]
+  251 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+test.c:271:1: error: expected declaration or statement at end of input
+  271 | }
+      | ^
+In file included from test.c:5:
+exercises.c:121:7: error: unused variable ‘tam’ [-Werror=unused-variable]
+  121 |   int tam;
+      |       ^~~
+exercises.c:120:7: error: unused variable ‘i’ [-Werror=unused-variable]
+  120 |   int i=0;
+      |       ^
+At top level:
+test.c:251:5: error: ‘main’ defined but not used [-Werror=unused-function]
+  251 | int main( int argc, char *argv[] ) {
+      |     ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+8c5e07c
