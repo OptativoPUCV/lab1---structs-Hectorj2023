@@ -582,3 +582,16 @@ Sat 18 Mar 2023 05:08:02 AM UTC:
  tests:  7|1
 total_score: 60/70
 aad5dd1
+Sat 18 Mar 2023 05:09:53 AM UTC: 
+ exercises.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:133:4: error: ‘Vector’ has no member named ‘tam’
+  133 |   c->tam = 2;
+      |    ^~
+exercises.c:134:31: error: ‘Vector’ has no member named ‘tam’
+  134 |     c->datos = (int*) malloc(c->tam * sizeof(int));
+      |                               ^~
+Compilation failed
+1eae63d
