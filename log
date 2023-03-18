@@ -721,3 +721,24 @@ exercises.c:133:32: error: invalid operands to binary * (have ‘Vector *’ and
       |                                ^
 Compilation failed
 02a1405
+Sat 18 Mar 2023 05:14:08 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:133:31: error: expected ‘)’ before numeric constant
+  133 |     c->datos = (int*) malloc(c 2 * sizeof(int));
+      |                               ^~
+      |                               )
+exercises.c:133:30: error: passing argument 1 of ‘malloc’ makes integer from pointer without a cast [-Werror=int-conversion]
+  133 |     c->datos = (int*) malloc(c 2 * sizeof(int));
+      |                              ^
+      |                              |
+      |                              Vector *
+In file included from test.c:2:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdlib.h:539:29: note: expected ‘size_t’ {aka ‘long unsigned int’} but argument is of type ‘Vector *’
+  539 | extern void *malloc (size_t __size) __THROW __attribute_malloc__
+      |                      ~~~~~~~^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+7a4b953
