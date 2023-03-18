@@ -504,3 +504,17 @@ exercises.c:120:7: error: unused variable ‘i’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 9dee363
+Sat 18 Mar 2023 05:00:34 AM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:121:24: error: ‘Vector’ has no member named ‘tam’
+  121 |   for (int i = 0; i < a->tam; i++) {
+      |                        ^~
+exercises.c:120:7: error: unused variable ‘tam’ [-Werror=unused-variable]
+  120 |   int tam;
+      |       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+af08652
