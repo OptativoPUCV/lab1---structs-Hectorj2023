@@ -612,3 +612,13 @@ exercises.c:133:7: error: unused variable ‘tam’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 f20ead5
+Sat 18 Mar 2023 05:10:57 AM UTC: 
+ exercises.c | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV2’:
+exercises.c:133:34: error: expected identifier before ‘*’ token
+  133 |     c->datos = (int*) malloc(c-> * sizeof(int));
+      |                                  ^
+Compilation failed
+d63a1b6
